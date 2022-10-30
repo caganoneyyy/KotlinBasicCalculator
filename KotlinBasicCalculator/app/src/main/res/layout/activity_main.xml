@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="120dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="69dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="168dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="42dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:background="#070606"
+            android:backgroundTint="#BC2424"
+            android:hapticFeedbackEnabled="false"
+            android:onClick="mySum"
+            android:shadowColor="#AC1414"
+            android:text="+"
+            android:textColor="#F3F2EB"
+            android:textColorHighlight="#AA1E1E"
+            android:textColorHint="#4E0F0F"
+            android:textColorLink="#A11818"
+            android:textSize="14sp"
+            android:textStyle="normal|italic"
+            app:rippleColor="#C61B1B"
+            app:strokeColor="#654949" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:background="#151414"
+            android:onClick="myDiv"
+            android:text="%" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:background="#1C1C1C"
+            android:onClick="mySub"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:background="#0C0C0C"
+            android:onClick="myMultiply"
+            android:text="*" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="331dp"
+        android:gravity="center"
+        android:textColor="#6335B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
